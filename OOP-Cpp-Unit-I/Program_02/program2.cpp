@@ -1,4 +1,4 @@
-#include   // Input/output library
+#include <iostream>   // Input/output library
 using namespace std; // Standard namespace
 
 int main() { // Main entry point
