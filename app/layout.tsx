@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Brain Sprint — Interactive Quiz',
   description:
     'Test your knowledge across general trivia, science, history, and geography. Race the clock, build streaks, and learn something new with every answer.',
+  verification: {
+     google:
+"3-iCJyX6_zf2crF5ZLk9fRCscPvU14-CPxwqkN4-ihE",
+},
   generator: 'v0.app',
   icons: {
     icon: [
