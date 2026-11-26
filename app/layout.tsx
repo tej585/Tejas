@@ -47,21 +47,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geist.variable} ${bricolage.variable}`}>
-      <head>
+      <body className="font-sans antialiased">
         <Script
-          id="gtm-script"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-KK6JWBB3"
         />
-        <Script id="gtm-init" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
           `}
         </Script>
-      </head>
-      <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
